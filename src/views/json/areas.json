@@ -1,0 +1,102 @@
+{
+	"name" : "ESRIJSON",
+	"type" : "FeatureCollection",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 113.81512213750011, 34.78082146185233 ]
+			},
+			"properties" : {
+				"FID" : 0,
+				"OBJECTID" : 1,
+				"XQ" : "郑东新区"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 113.72770433400012, 34.854481308610275 ]
+			},
+			"properties" : {
+				"FID" : 1,
+				"OBJECTID" : 2,
+				"XQ" : "金水区"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 113.71360998410194, 34.679283833283364 ]
+			},
+			"properties" : {
+				"FID" : 2,
+				"OBJECTID" : 3,
+				"XQ" : "管城区"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 113.82740186407614, 34.68628339601821 ]
+			},
+			"properties" : {
+				"FID" : 3,
+				"OBJECTID" : 5,
+				"XQ" : "经开区"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 113.60985920704877, 34.89170653279166 ]
+			},
+			"properties" : {
+				"FID" : 4,
+				"OBJECTID" : 7,
+				"XQ" : "惠济区"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 113.58859186017435, 34.67991036927589 ]
+			},
+			"properties" : {
+				"FID" : 5,
+				"OBJECTID" : 9,
+				"XQ" : "二七区"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 113.53225922400009, 34.82167077994046 ]
+			},
+			"properties" : {
+				"FID" : 6,
+				"OBJECTID" : 17,
+				"XQ" : "高新区"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 113.54949523884568, 34.74836750551913 ]
+			},
+			"properties" : {
+				"FID" : 7,
+				"OBJECTID" : 24,
+				"XQ" : "中原区"
+			}
+		}
+	]
+}

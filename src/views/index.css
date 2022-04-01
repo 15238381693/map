@@ -1,0 +1,107 @@
+.w {
+  width: 100%;
+}
+
+.h {
+  height: 100vh;
+}
+.mapCanvas {
+  height: 100%;
+}
+.mapCanvas #container {
+  margin: 0px;
+  font: 12px Arial;
+}
+.mapCanvas #container .circle {
+  border-radius: 50%;
+  /* border: solid 1px silver; */
+  background-color: rgba(48,114,246,0.8);
+  width: 86px;
+  height: 86px;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 43px;
+  max-width: 86px;
+  color: #fff;
+}
+.mapCanvas #container .circle:hover {
+  border: 2px solid rgba(48,114,246,1);
+}
+.mapCanvas #container .circle > div {
+  line-height: normal;
+}
+.mapCanvas #container .amap-zoom-plus,
+.mapCanvas #container .amap-zoom-minus {
+  background-position: inherit;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+.mapCanvas #container .amap-zoom-plus::after {
+  content: "+";
+}
+.mapCanvas #container .amap-zoom-minus::after {
+  content: "-";
+}
+.mapCanvas #container .amap-zoom-ruler {
+  left: 9px;
+}
+.mapCanvas .amap-zoom-label-country,
+.mapCanvas .amap-zoom-label-province,
+.mapCanvas .amap-zoom-label-city,
+.mapCanvas .amap-zoom-label-street {
+  text-align: center;
+  line-height: 20px;
+  left: -37px;
+  color: #000;
+  width: 19px;
+  height: 20px;
+  background: inherit;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.12);
+}
+.mapCanvas .amap-zoom-label-country::before,
+.mapCanvas .amap-zoom-label-province::before,
+.mapCanvas .amap-zoom-label-city::before,
+.mapCanvas .amap-zoom-label-street::before {
+  color: #000;
+}
+.mapCanvas .amap-zoom-label-country::after,
+.mapCanvas .amap-zoom-label-province::after,
+.mapCanvas .amap-zoom-label-city::after,
+.mapCanvas .amap-zoom-label-street::after {
+  content: "";
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid #fff;
+}
+.mapCanvas .amap-zoom-label-country::before {
+  content: '国';
+}
+.mapCanvas .amap-zoom-label-province::before {
+  content: '省';
+}
+.mapCanvas .amap-zoom-label-city::before {
+  content: '市';
+}
+.mapCanvas .amap-zoom-label-street::before {
+  content: '街';
+}

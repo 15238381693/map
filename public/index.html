@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>
+    市城建档案馆查询
+  </title>
+  <!-- <script
+    type="text/javascript"
+    src="https://webapi.amap.com/maps?v=1.4.15&key=cd34f943e3b45eff2dd8fb2107e086a2&plugin=AMap.Driving"></script> -->
+    <script type="text/javascript">
+      window._AMapSecurityConfig = {
+        securityJsCode: '90b4b0febae76f92321729b850a60216',  //密钥
+      }
+    </script>
+    <script type="text/javascript"
+      src="https://webapi.amap.com/maps?v=1.4.15&key=a8aa7a3dbb3539f40d7140bf04aefb44&plugin=AMap.DistrictSearch,AMap.Driving">
+    </script>
+
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>

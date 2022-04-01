@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+  <script type="text/javascript"
+  src="https://webapi.amap.com/maps?v=1.4.15&key=15172d0a9dcc02ca37b2263c5973689c&plugin=AMap.DistrictSearch"></script>
+  <script
+    type="text/javascript"
+    src="https://webapi.amap.com/maps?v=1.4.15&key=15172d0a9dcc02ca37b2263c5973689c&plugin=AMap.Geocoder,AMap.Autocomplete,AMap.PlaceSearch,AMap.InfoWindow,AMap.DistrictSearch">
+  </script>
+  <script type="text/javascript" src="https://webapi.amap.com/demos/js/liteToolbar.js"></script>
+  <script src="./data.js"></script>
+  <style>
+    .w {
+      width: 100%;
+    }
+
+    .h {
+      height: 100vh;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mapCanvas w h">
+    <div id="container" class="w h" tabindex="0"></div>
+  </div>
+  <script>
+    var marker, map, infoWindow, markers, mapLevel, provinces, citys, areas, shop;
+
+    //初始化地图容器
+    const init = () => {
+      marker,
+      map = new AMap.Map("container", {
+        resizeEnable: true,
+        zoom: 12, //郑州
+        // zoom: 6,
+        zooms: [5, 18],
+        center: [113.716546,34.763674],
+      });
+
+      //创建信息窗体
+      infoWindow = new AMap.InfoWindow({
+        offset: new AMap.Pixel(0, -30)
+      });
+
+      //map绑定滚动结束事件  
+      map.on('zoomend', mapZoomend);
+
+      //map拖拽结束事件
+      map.on('moveend', mapMoveEnd);
+
+      //首次加载郑州市的marker
+      creatMarker(areas)
+
+    };
+
+    //地图层级放大缩小的事件
+    function mapZoomend() {
+      // 10看到区域 13可以看到街道 15看到店铺
+      let level = map.getZoom()
+      console.log('level',level);
+      mapLevel = level
+      if (level >= 10 && level < 13) {
+        //  这里是加载区域信息
+        getCurrentAreaMap().then(res => {
+          if (res.code == 200) {
+            clearMarker()
+            creatMarker(res.data)
+          }
+        })
+      } else if (level >= 13 && level < 15) {
+        // 这里去加载社区街道信息
+        getStreetMap().then(res => {
+          if (res.code === 200) {
+            clearMarker()
+            creatShopMarker(res.data)
+          }
+        })
+      } else if (level >= 15) {
+        //  这里是加载具体街道信息
+        getCurrentStoreMap().then(res => {
+          if (res.code == 200) {
+            clearMarker()
+            creatShopMarker(res.data)
+          }
+        })
+      }
+    }
+
+    //地图拖动结束时的事件
+    function mapMoveEnd() {
+      let level = map.getZoom()
+      mapLevel = level
+      clearMarker()
+      if (level > 10 && level < 14) {
+        creatMarker(areas)
+      } else if (level >= 14) {
+        creatShopMarker(shop)
+      }
+    }
+
+    //规划处地图的可视范围  
+    function logMapBounds(center) {
+      var point = center.split(',')
+      var bounds = map.getBounds();
+      const NorthEast = bounds.getNorthEast();
+      const SouthWest = bounds.getSouthWest();
+      const SouthEast = [NorthEast.lng, SouthWest.lat];
+      const NorthWest = [SouthWest.lng, NorthEast.lat];
+      const path = [
+        [NorthEast.lng, NorthEast.lat], SouthEast, [SouthWest.lng, SouthWest.lat], NorthWest
+      ]
+      return AMap.GeometryUtil.isPointInRing(point, path);
+    }
+
+    //自定义省市区的marker且添加marker
+    function creatMarker(data) {
+      clearMarker()
+      for (let i = 0; i < data.length; i++) {
+        var div = `<div class="circle" center=${data[i].baseAreaCenter}>
+                    <div>
+                        <div>${data[i].baseAreaName} </div><div>${data[i].count}</div>
+                    </div>
+                </div>`
+        if (logMapBounds(data[i].baseAreaCenter)) {
+          markers = new AMap.Marker({
+            content: div,
+            areaCode: data[i].baseAreaCode,
+            position: data[i].baseAreaCenter.split(","),
+            offset: new AMap.Pixel(-24, 5),
+            zIndex: data[i].count,
+            map: map
+          });
+          markers.on('click', showInfoM);
+        }
+      }
+    }
+
+    //创建门店marker
+    function creatShopMarker(data) {
+      for (var i = 0; i < data.length; i++) {
+        if (logMapBounds(data[i]['经度'] + ',' + data[i]['纬度'])) {
+          let div = `<div style="background-color: #3072f6;height:100%;width:200px;padding: 8px 12px;line-height:24px;color:white;text-align: center;letter-spacing: 0;font-size: 12px;border-radius: 20px;">
+            ${data[i]['项目名称']}
+          </div>`
+          var marker = new AMap.Marker({
+            position: (data[i]['经度'] + ',' + data[i]['纬度']).split(','),
+            // icon: './marker.svg',
+            content: div,
+            size: [32, 43],
+            imageSize: new AMap.Size(32, 43),
+            map: map
+          });
+          marker.content =
+            `<div><span style="color:#31C0FD">${data[i]['项目名称']}</span> ${data[i]['建设单位']}</div>`;
+          marker.on('click', markerClick);
+        }
+      }
+    }
+
+    //点击省市区marker时的事件
+    function showInfoM(e) {
+      let level = map.getZoom()
+      let zooms, centers;
+      if (level >= 8 && level < 11) {
+        zooms = 11
+        centers = [e.target.Ce.position.lng, e.target.Ce.position.lat]
+        map.setCenter(centers)
+        map.setZoom(zooms)
+      } else if (level >= 11 && level < 15) {
+        zooms = 15
+        centers = [e.target.Ce.position.lng, e.target.Ce.position.lat]
+        map.setCenter(centers)
+        map.setZoom(zooms)
+        getCurrentStoreMap(e.target.Ce.areaCode).then(async (res) => {
+          setTimeout(function () {
+            for (let i = 0; i < res.data.length; i++) {
+              if (logMapBounds(res.data[i].baseAreaCenter)) {
+                return false
+              }
+            }
+            map.setCenter(res.data[0].baseAreaCenter.split(','))
+          }, 300)
+
+        }).catch()
+      }
+
+    }
+
+    //点击门店marker时触发的事件
+    function markerClick(e) {
+      infoWindow.setContent(e.target.content);
+      infoWindow.open(map, e.target.getPosition());
+    }
+
+    //清除marker标记
+    function clearMarker() {
+      map.clearMap()
+    }
+
+    //获取区的数据
+    const getCurrentAreaMap = () => {
+      return new Promise((resolve, reject) => {
+        let res = {
+          code: 200,
+          data: areaData
+        }
+        areas = areaData
+        resolve(res)
+      })
+    }
+
+    //获取街道办事处的数据
+    const getStreetMap = () => {
+      return new Promise((resolve, reject) => {
+        let res = {
+          code: 200,
+          data: areaData
+        }
+        areas = areaData
+        resolve(res)
+      })
+    }
+
+    //获取品牌门店数据
+    const getCurrentStoreMap = (data) => {
+      return new Promise((resolve, reject) => {
+        let res = {
+          code: 200,
+          data: storeData
+        }
+        shop = storeData
+        resolve(res)
+      })
+    }
+
+    getCurrentAreaMap().then(res => {
+      init()
+    }).catch(err => {
+      init()
+    })
+  </script>
+</body>
+
+</html>
