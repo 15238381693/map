@@ -38,7 +38,6 @@
 <script>
 import { areaData, streetData, storeData } from '../data/mapData'
 import { ImagePreview } from 'vant'
-import qs from 'qs'
 export default {
   name: 'FileMaps',
   data() {
@@ -83,10 +82,10 @@ export default {
     }
   },
   created() {
-    this.mapList = storeData
-    this.mapList.map(item=>{
-      return this.markerList.push(item)
-    })
+    // this.mapList = storeData
+    // this.mapList.map(item=>{
+    //   return this.markerList.push(item)
+    // })
     this.$axios({
       method: 'POST',
       url: `/zzscjdagl/rest/zzsrestcontroller/findGhxkGisByPage`,
@@ -96,8 +95,13 @@ export default {
       },
     })
     .then((res) => {
-      console.log('res',res);
-      
+      const {code, list} = res.data.custom;
+      if (code === 1) {
+        this.mapList = list
+        this.mapList.map(item => {
+          return this.markerList.push(item)
+        })
+      }
     })
     .catch((err) => {
       console.log(err)
@@ -200,7 +204,7 @@ export default {
       this.getCurrentStoreMap(e.target.De.areaCode).then(async (res) => {
         setTimeout(()=>{
           for (let i = 0; i < res.data.length; i++) {
-            if (this.logMapBounds(res.data[i]['经度']+','+res.data[i]['纬度'])) return false
+            if (this.logMapBounds(res.data[i]['lat_x']+','+res.data[i]['lon_y'])) return false
           }
           this.map.setCenter(res.data[0].baseAreaCenter.split(','))
         }, 300)
@@ -221,13 +225,18 @@ export default {
       e.target.setIcon(this.iconbig)
       // 点击后item的内容
       let content = e.target.getExtData()
-      // 给标签赋值
-      this.detailData.name = content['项目名称']
-      this.detailData.address = content['项目地址']
-      this.detailData.unit = content['建设单位']
-      this.detailData.time = content['年度']
-      this.detailData.license = content['建设工程规划许可证号']
-      this.detailData.searchNum = content['检索号']
+      // 项目名称 
+      this.detailData.name = content['gongchengmingcheng']
+      // 项目地址
+      this.detailData.address = content['jsaddress']
+      // 建设单位
+      this.detailData.unit = content['anjuantiming']
+      // 年度
+      this.detailData.time = content['year']
+      // 建设工程规划许可证号
+      this.detailData.license = content['jsgcghxkzh']
+      // 检索号
+      this.detailData.searchNum = content['jsh']
     },
     /**
      * 清除marker标记
@@ -255,6 +264,7 @@ export default {
         this.getStreetMap().then(res => {
           if (res.code === 200) {
             this.clearMarker()
+            console.log(333,res.data);
             this.creatStreetMarker(res.data)
           }
         })
@@ -315,9 +325,9 @@ export default {
       return new Promise((resolve, reject) => {
         let res = {
           code: 200,
-          data: storeData
+          data: this.mapList
         }
-        this.shop = storeData
+        this.shop = this.mapList
         resolve(res)
       })
     },
@@ -372,11 +382,11 @@ export default {
     creatShopMarker(data) {
       for (var i = 0; i < data.length; i++) {
         if (true) {
-          let div = `<div style="background-color: rgba(48,114,246,0.8);height:100%;width:200px;padding: 8px 12px;line-height:24px;color:white;text-align: center;letter-spacing: 0;font-size: 12px;border-radius: 20px;">
-            ${data[i]['项目名称']}
+          let div = `<div style="background-color: rgba(48,114,246,0.8);height:100%;width:150px;padding: 8px 12px;line-height:24px;color:white;text-align: center;letter-spacing: 0;font-size: 12px;border-radius: 20px;">
+            ${data[i]['gongchengmingcheng']}
           </div>`
           var marker = new AMap.Marker({
-            position: (data[i]['经度'] + ',' + data[i]['纬度']).split(','),
+            position: (data[i]['lat_x'] + ',' + data[i]['lon_y']).split(','),
             content: div,
             size: [32, 43],
             imageSize: new AMap.Size(32, 43),
@@ -385,7 +395,7 @@ export default {
           marker.setExtData(data[i])
           this.markerList.push(marker)
           marker.content =
-            `<div><span style="color:#31C0FD">${data[i]['项目名称']}</span> ${data[i]['建设单位']}</div>`;
+            `<div><span style="color:#31C0FD">${data[i]['gongchengmingcheng']}</span> ${data[i]['建设单位']}</div>`;
           marker.on('click', this.markerClick);
         }
       }
@@ -458,7 +468,7 @@ export default {
     getMarketList() {
       const that = this
       this.mapList.forEach((item, index) => {
-        AMap.convertFrom([item['经度'], item['纬度']], 'gps', function (status, result) {
+        AMap.convertFrom([item['lat_x'], item['lon_y']], 'gps', function (status, result) {
           if (result.info === 'ok') {
             var resLnglat = result.locations[0]
             let marker = new AMap.Marker({
