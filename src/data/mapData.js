@@ -10,7 +10,7 @@ export const areaData = [
     baseAreaCode: '110102',
     baseAreaName: '金水区',
     baseFullName: '河南省/郑州市/金水区',
-    baseAreaCenter: '113.660555,34.800156',
+    baseAreaCenter: '113.660555,34.810156',
     count: 18
   },
   {
@@ -57,664 +57,664 @@ export const areaData = [
   },
 ]
 export const streetData = [
-    {
-        "baseAreaCode": "110101",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/金水区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110102",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/惠济区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110103",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/中原区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110104",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/二七区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110105",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/管城回族区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110106",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/经开区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110101",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/金水区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110102",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/惠济区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110103",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/中原区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110104",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/二七区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110105",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/管城回族区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110106",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/经开区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110101",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/金水区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110102",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/惠济区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110103",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/中原区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110104",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/二七区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110105",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/管城回族区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110106",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/经开区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110101",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/金水区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110102",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/惠济区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110103",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/中原区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110104",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/二七区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110105",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/管城回族区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110106",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/经开区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110101",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/金水区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110102",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/惠济区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110103",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/中原区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110104",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/二七区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110105",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/管城回族区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110106",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/经开区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110101",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/金水区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110102",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/惠济区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110103",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/中原区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110104",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/二七区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110105",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/管城回族区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110106",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/经开区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110101",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/金水区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110102",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/惠济区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110103",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/中原区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110104",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/二七区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110105",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/管城回族区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110106",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/经开区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110101",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/金水区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110102",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/惠济区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110103",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/中原区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110104",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/二七区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110105",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/管城回族区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110106",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/经开区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110101",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/金水区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110102",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/惠济区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110103",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/中原区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110104",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/二七区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110105",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/管城回族区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110106",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/经开区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    },
-    {
-        "baseAreaCode": "110107",
-        "baseAreaName": "紫荆山南路街道办事处",
-        "baseFullName": "河南省/郑州市/郑东新区",
-        "baseAreaCenter": "113.67658293468571,34.713521448985944",
-        "count": 3
-    }
+  {
+      "baseAreaCode": "110101",
+      "baseAreaName": "白沙镇",
+      "baseFullName": "郑东新区",
+      "baseAreaCenter": "113.87516771372952,34.75849266664966",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110102",
+      "baseAreaName": "北林路街道办事处",
+      "baseFullName": "金水区",
+      "baseAreaCenter": "113.68243472831352,34.80614042689729",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110103",
+      "baseAreaName": "北下街街道办事处",
+      "baseFullName": "管城区",
+      "baseAreaCenter": "113.66898239629165,34.754907919725724",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110104",
+      "baseAreaName": "博学路街道办事处",
+      "baseFullName": "郑东新区",
+      "baseAreaCenter": "113.7965283489084,34.77964160321096",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110105",
+      "baseAreaName": "潮河街道办事处",
+      "baseFullName": "经开区",
+      "baseAreaCenter": "113.79408586129898,34.697768750313514",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110106",
+      "baseAreaName": "城东路街道办事处",
+      "baseFullName": "管城区",
+      "baseAreaCenter": "113.68887825716035,34.7531271757523",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "大河路街道办事处",
+      "baseFullName": "惠济区",
+      "baseAreaCenter": "113.5804715188558,34.89879720752879",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "大石桥街道办事处",
+      "baseFullName": "金水区",
+      "baseAreaCenter": "113.64952645179255,34.766968985541496",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "大学路街道办事处",
+      "baseFullName": "二七区",
+      "baseAreaCenter": "113.63158990254806,34.74338295799049",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "德华街街道办事处",
+      "baseFullName": "二七区",
+      "baseAreaCenter": "113.66047087177981,34.75144581347587",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110101",
+      "baseAreaName": "东大街街道办事处",
+      "baseFullName": "管城区",
+      "baseAreaCenter": "113.67886284202211,34.748239930176226",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110102",
+      "baseAreaName": "东风路街道办事处",
+      "baseFullName": "金水区",
+      "baseAreaCenter": "113.64636301179723,34.802880682096315",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110103",
+      "baseAreaName": "杜岭街街道办事处",
+      "baseFullName": "金水区",
+      "baseAreaCenter": "113.66179177938238,34.7608202202494",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110104",
+      "baseAreaName": "二里岗街道办事处",
+      "baseFullName": "管城区",
+      "baseAreaCenter": "113.69313923225013,34.74104366446909",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110105",
+      "baseAreaName": "丰产路街道办事处",
+      "baseFullName": "金水区",
+      "baseAreaCenter": "113.69064902568016,34.78347299712641",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110106",
+      "baseAreaName": "丰庆路街道办事处",
+      "baseFullName": "金水区",
+      "baseAreaCenter": "113.64356846569319,34.83015165528974",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "枫杨街道办事处",
+      "baseFullName": "高新区",
+      "baseAreaCenter": "113.56032966633813,34.822415149404094",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "凤凰台街道办事处",
+      "baseFullName": "金水区",
+      "baseAreaCenter": "113.71174787708696,34.74744255893762",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "福华街街道办事处",
+      "baseFullName": "二七区",
+      "baseAreaCenter": "113.65401847258693,34.72956057904844",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "沟赵街道办事处",
+      "baseFullName": "高新区",
+      "baseAreaCenter": "113.4696394020001,34.81616132073265",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110101",
+      "baseAreaName": "古荥镇",
+      "baseFullName": "惠济区",
+      "baseAreaCenter": "113.52280241900007,34.914171737797915",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110102",
+      "baseAreaName": "国基路街道办事处",
+      "baseFullName": "金水区",
+      "baseAreaCenter": "113.6717507252497,34.834948733600754",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110103",
+      "baseAreaName": "航海东路街道办事处",
+      "baseFullName": "管城区",
+      "baseAreaCenter": "113.69811063169584,34.7209057300916",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110104",
+      "baseAreaName": "航海西路街道办事处",
+      "baseFullName": "中原区",
+      "baseAreaCenter": "113.58814341564243,34.724606467013075",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110105",
+      "baseAreaName": "侯寨街道办事处",
+      "baseFullName": "二七区",
+      "baseAreaCenter": "113.57075127630617,34.68281882357087",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110106",
+      "baseAreaName": "花园口镇",
+      "baseFullName": "惠济区",
+      "baseAreaCenter": "113.71940057454924,34.884567264501925",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "花园路街道办事处",
+      "baseFullName": "金水区",
+      "baseAreaCenter": "113.68409954659421,34.76851088821826",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "淮河路街道办事处",
+      "baseFullName": "二七区",
+      "baseAreaCenter": "113.6272135460307,34.7294296710636",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "黄河滩",
+      "baseFullName": "金水区",
+      "baseAreaCenter": "113.83692377250009,34.874817740241724",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "黄河滩",
+      "baseFullName": "郑东新区",
+      "baseAreaCenter": "113.89717356742017,34.87403361451641",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110101",
+      "baseAreaName": "祭城路街道办事处",
+      "baseFullName": "郑东新区",
+      "baseAreaCenter": "113.74724255367039,34.76462898726254",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110102",
+      "baseAreaName": "建设路街道办事处",
+      "baseFullName": "中原区",
+      "baseAreaCenter": "113.60692503863845,34.75335560436184",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110103",
+      "baseAreaName": "建中街街道办事处",
+      "baseFullName": "二七区",
+      "baseAreaCenter": "113.64242973487092,34.73405379613996",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110104",
+      "baseAreaName": "江山路街道办事处",
+      "baseFullName": "惠济区",
+      "baseAreaCenter": "113.58000279857197,34.85903668990261",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110105",
+      "baseAreaName": "解放路街道办事处",
+      "baseFullName": "二七区",
+      "baseAreaCenter": "113.65755982200017,34.75441107907238",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110106",
+      "baseAreaName": "金岱街道办事处",
+      "baseFullName": "管城区",
+      "baseAreaCenter": "113.72816955050007,34.68892252776078",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "金光路街道办事处",
+      "baseFullName": "郑东新区",
+      "baseAreaCenter": "113.83093618460634,34.7834151336383",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "金水源街道办事处",
+      "baseFullName": "二七区",
+      "baseAreaCenter": "113.61923176050652,34.66032304825126",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "京广路街道办事处",
+      "baseFullName": "二七区",
+      "baseAreaCenter": "113.65586689700012,34.700013896169594",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "京航街道办事处",
+      "baseFullName": "经开区",
+      "baseAreaCenter": "113.83460587947945,34.72048571295818",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110101",
+      "baseAreaName": "经八路街道办事处",
+      "baseFullName": "金水区",
+      "baseAreaCenter": "113.66621761672832,34.77286020134807",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110102",
+      "baseAreaName": "九龙街道办事处",
+      "baseFullName": "经开区",
+      "baseAreaCenter": "113.85935011154686,34.68227119956998",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110103",
+      "baseAreaName": "莲湖街道办事处",
+      "baseFullName": "中原区",
+      "baseAreaCenter": "113.54588195501844,34.728823044097965",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110104",
+      "baseAreaName": "林山寨街道办事处",
+      "baseFullName": "中原区",
+      "baseAreaCenter": "113.61595150024789,34.74473239129344",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110105",
+      "baseAreaName": "刘寨街道办事处",
+      "baseFullName": "惠济区",
+      "baseAreaCenter": "113.61909669819852,34.80625736506971",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110106",
+      "baseAreaName": "柳湖街道办事处",
+      "baseFullName": "中原区",
+      "baseAreaCenter": "113.49832075276504,34.73902229945497",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "龙湖街道办事处",
+      "baseFullName": "郑东新区",
+      "baseAreaCenter": "113.73506589850012,34.8067238805188",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "龙源路街道办事处",
+      "baseFullName": "郑东新区",
+      "baseAreaCenter": "113.71262740800012,34.835564834596596",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "龙子湖街道办事处",
+      "baseFullName": "郑东新区",
+      "baseAreaCenter": "113.79990599805376,34.81051151256531",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "陇海马路街道办事处",
+      "baseFullName": "管城区",
+      "baseAreaCenter": "113.6750734740001,34.736581154162025",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110101",
+      "baseAreaName": "绿东村街道办事处",
+      "baseFullName": "中原区",
+      "baseAreaCenter": "113.59624118237514,34.74006854633245",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110102",
+      "baseAreaName": "马寨镇",
+      "baseFullName": "二七区",
+      "baseAreaCenter": "113.52657569301459,34.685031443524906",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110103",
+      "baseAreaName": "蜜蜂张街道办事处",
+      "baseFullName": "二七区",
+      "baseAreaCenter": "113.64806755981328,34.74999951018202",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110104",
+      "baseAreaName": "棉纺路街道办事处",
+      "baseFullName": "中原区",
+      "baseAreaCenter": "113.61656892795645,34.75998101386136",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110105",
+      "baseAreaName": "明湖街道办事处",
+      "baseFullName": "经开区",
+      "baseAreaCenter": "113.7446168378824,34.71227303642121",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110106",
+      "baseAreaName": "铭功路街道办事处",
+      "baseFullName": "二七区",
+      "baseAreaCenter": "113.65296587151454,34.75945901940088",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "南曹街道办事处",
+      "baseFullName": "管城区",
+      "baseAreaCenter": "113.74701741658225,34.64996255269108",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "南关街街道办事处",
+      "baseFullName": "管城区",
+      "baseAreaCenter": "113.66344464750011,34.739537177867305",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "南阳路街道办事处",
+      "baseFullName": "金水区",
+      "baseAreaCenter": "113.63837416787851,34.774770070133115",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "南阳新村街道办事处",
+      "baseFullName": "金水区",
+      "baseAreaCenter": "113.62816334019453,34.79046777948804",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110101",
+      "baseAreaName": "圃田乡",
+      "baseFullName": "郑东新区",
+      "baseAreaCenter": "113.82112738728381,34.74611561612568",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110102",
+      "baseAreaName": "前程街道办事处",
+      "baseFullName": "经开区",
+      "baseAreaCenter": "113.90025948625009,34.6755851484869",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110103",
+      "baseAreaName": "秦岭路街道办事处",
+      "baseFullName": "中原区",
+      "baseAreaCenter": "113.6025233577501,34.76244034343955",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110104",
+      "baseAreaName": "人和路街道办事处",
+      "baseFullName": "二七区",
+      "baseAreaCenter": "113.64353600439154,34.68872970349173",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110105",
+      "baseAreaName": "人民路街道办事处",
+      "baseFullName": "金水区",
+      "baseAreaCenter": "113.67914852433148,34.7597647370265",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110106",
+      "baseAreaName": "如意湖街道办事处",
+      "baseFullName": "郑东新区",
+      "baseAreaCenter": "113.72688613871458,34.780861080402985",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "三官庙街道办事处",
+      "baseFullName": "中原区",
+      "baseAreaCenter": "113.58967542494236,34.756516775052376",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "商都路街道办事处",
+      "baseFullName": "郑东新区",
+      "baseAreaCenter": "113.7702533805001,34.740756966461504",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "十八里河街道办事处",
+      "baseFullName": "管城区",
+      "baseAreaCenter": "113.68536275118981,34.672786554831134",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "石佛街道办事处",
+      "baseFullName": "高新区",
+      "baseAreaCenter": "113.57758692185757,34.78850249652896",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110101",
+      "baseAreaName": "双桥街道办事处",
+      "baseFullName": "高新区",
+      "baseAreaCenter": "113.5458093998343,34.84623614717151",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110102",
+      "baseAreaName": "嵩山路街道办事处",
+      "baseFullName": "二七区",
+      "baseAreaCenter": "113.61733255342642,34.698751469374315",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110103",
+      "baseAreaName": "桐柏路街道办事处",
+      "baseFullName": "中原区",
+      "baseAreaCenter": "113.60769500934293,34.774945936075994",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110104",
+      "baseAreaName": "未来路街道办事处",
+      "baseFullName": "金水区",
+      "baseAreaCenter": "113.7040592584566,34.76227090533564",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110105",
+      "baseAreaName": "文化路街道办事处",
+      "baseFullName": "金水区",
+      "baseAreaCenter": "113.66842286486815,34.789965007341266",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110106",
+      "baseAreaName": "梧桐街道办事处",
+      "baseFullName": "高新区",
+      "baseAreaCenter": "113.53159607750013,34.79397939359012",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "五里堡街道办事处",
+      "baseFullName": "二七区",
+      "baseAreaCenter": "113.63467323980467,34.757208448569486",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "西大街街道办事处",
+      "baseFullName": "管城区",
+      "baseAreaCenter": "113.66494972681221,34.74784498472371",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "西流湖街道办事处",
+      "baseFullName": "中原区",
+      "baseAreaCenter": "113.54840557230148,34.762614727936636",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "祥云街道办事处",
+      "baseFullName": "经开区",
+      "baseAreaCenter": "113.80625899850008,34.63537046754925",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110101",
+      "baseAreaName": "新城街道办事处",
+      "baseFullName": "惠济区",
+      "baseAreaCenter": "113.63111405493123,34.893613431590154",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110102",
+      "baseAreaName": "兴达路街道办事处",
+      "baseFullName": "金水区",
+      "baseAreaCenter": "113.8031460911701,34.84777213435683",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110103",
+      "baseAreaName": "须水街道办事处",
+      "baseFullName": "中原区",
+      "baseAreaCenter": "113.51545541525002,34.756056823880215",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110104",
+      "baseAreaName": "杨金路街道办事处",
+      "baseFullName": "金水区",
+      "baseAreaCenter": "113.7344173168052,34.85358278223447",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110105",
+      "baseAreaName": "杨桥街道办事处",
+      "baseFullName": "郑东新区",
+      "baseAreaCenter": "113.88764959350021,34.848444860079894",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110106",
+      "baseAreaName": "一马路街道办事处",
+      "baseFullName": "二七区",
+      "baseAreaCenter": "113.65615121450014,34.74752824919301",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "樱桃沟景区",
+      "baseFullName": "二七区",
+      "baseAreaCenter": "113.56669268129781,34.63772358581457",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "迎宾路街道办事处",
+      "baseFullName": "惠济区",
+      "baseAreaCenter": "113.65495391779461,34.86863944590203",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "豫兴路街道办事处",
+      "baseFullName": "郑东新区",
+      "baseAreaCenter": "113.88373012440661,34.80569036152133",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "长江路街道办事处",
+      "baseFullName": "二七区",
+      "baseAreaCenter": "113.64365719850002,34.71548068492956",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "长兴路街道办事处",
+      "baseFullName": "惠济区",
+      "baseAreaCenter": "113.61074426909784,34.827375795869784",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "郑州市黄河农场木楼分场",
+      "baseFullName": "郑东新区",
+      "baseAreaCenter": "113.91217278810007,34.83058950844719",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "中原西路街道办事处",
+      "baseFullName": "中原区",
+      "baseAreaCenter": "113.58822586944063,34.745268183701",
+      "count": 3
+  },
+  {
+      "baseAreaCode": "110107",
+      "baseAreaName": "紫荆山南路街道办事处",
+      "baseFullName": "管城区",
+      "baseAreaCenter": "113.67658293468571,34.713521448985944",
+      "count": 3
+  }
 ]
 
 export const storeData = [

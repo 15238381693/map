@@ -37,16 +37,8 @@
 
 <script>
 import { areaData, streetData, storeData } from '../data/mapData'
-// for (let i = 0; i < streetData.length; i++) {
-//   let res = streetData[i]
-//   for (let j = 0; j < xxx.features.length; j++) {
-//     let item = xxx.features[j];
-//     res.baseAreaCenter = item.geometry.coordinates[0] + ',' + item.geometry.coordinates[1]
-//     res.baseAreaName = item.properties.BZ
-//   }
-// }
-// console.log(123,streetData);
 import { ImagePreview } from 'vant'
+import qs from 'qs'
 export default {
   name: 'FileMaps',
   data() {
@@ -95,6 +87,21 @@ export default {
     this.mapList.map(item=>{
       return this.markerList.push(item)
     })
+    this.$axios({
+      method: 'POST',
+      url: `/zzscjdagl/rest/zzsrestcontroller/findGhxkGisByPage`,
+      data: {
+        index: 0,
+        pagesize: 1000
+      },
+    })
+    .then((res) => {
+      console.log('res',res);
+      
+    })
+    .catch((err) => {
+      console.log(err)
+    })
   },
   mounted() {
     this.getStreetMap()
@@ -102,9 +109,9 @@ export default {
     this.getCurrentAreaMap()
     this.map = new AMap.Map('container', {
       resizeEnable: true,
-        zoom: 11, //郑州
-        zooms: [5, 18],
-        center: [113.69546,34.753674],
+      zoom: 11, //郑州
+      zooms: [5, 18],
+      center: [113.69546,34.753674],
     })
     //创建信息窗体
     this.infoWindow = new AMap.InfoWindow({
@@ -126,52 +133,41 @@ export default {
      * 绘画出行政区范围函数
      * @param name 行政区
      */
-    drawBounds(name) {
-      this.map.plugin('AMap.DistrictSearch', ()=> {
-        if(!this.district){
-            //实例化DistrictSearch
-            const opts = {
-                subdistrict: 0,   //获取边界不需要返回下级行政区
-                extensions: 'all',  //返回行政区边界坐标组等具体信息
-                level: 'district'  //查询行政级别为 市
-            };
-            this.district = new AMap.DistrictSearch(opts);
-        }
-        //行政区查询
-        this.district.search(name, (status,result) => {
-          console.log('res',result);
-            this.map.remove(this.polygons)//清除上次结果
-            this.polygons = []
-            const bounds = result.districtList[0].boundaries;
-            console.log('bounds',bounds);
-            if (bounds) {
-                for (let i = 0, l = bounds.length; i < l; i++) {
-                    //生成行政区划polygon
-                    let polygon = new AMap.Polygon({
-                        strokeWeight: 1,
-                        path: bounds[i],
-                        fillOpacity: 0.4,
-                        fillColor: '#80d8ff',
-                        strokeColor: '#0091ea'
-                    });
-                    console.log('?',polygon);
-                    this.polygons.push(polygon);
-                }
-            }
-            console.log(123,this.polygons);
-            this.map.add(this.polygons)
-            this.map.setFitView(this.polygons);//视口自适应
-        });
-      })
-        
-    },
+    // drawBounds(name) {
+    //   if (!this.district) {
+    //       //实例化DistrictSearch
+    //       const opts = {
+    //           subdistrict: 0,   //获取边界不需要返回下级行政区
+    //           extensions: 'all',  //返回行政区边界坐标组等具体信息
+    //           level: 'district'  //查询行政级别为 市
+    //       };
+    //       this.district = new AMap.DistrictSearch(opts);
+    //     }
+    //     this.district.search('金水区', (status,result) => {
+    //         this.map.remove(this.polygons)//清除上次结果
+    //         this.polygons = []
+    //         const bounds = result.districtList[0].boundaries;
+    //         if (bounds) {
+    //             for (let i = 0, l = bounds.length; i < l; i++) {
+    //                 //生成行政区划polygon
+    //                 let polygon = new AMap.Polygon({
+    //                     strokeWeight: 1,
+    //                     path: bounds[i],
+    //                     fillOpacity: 0.4,
+    //                     fillColor: '#80d8ff',
+    //                     strokeColor: '#0091ea'
+    //                 });
+    //                 this.polygons.push(polygon);
+    //             }
+    //         }
+    //         this.map.add(this.polygons)
+    //         this.map.setFitView(this.polygons);//视口自适应
+    //     });
+    // },
     /**
      * 点击省市区marker时的事件
     */
     showInfoM(e) {
-      console.log('click',e.target?.w?.name);
-      const areaName = e.target?.w?.name
-      // this.drawBounds(areaName)
       let zooms, centers;
       zooms = 13
       centers = [e.target.De.position.lng, e.target.De.position.lat]
@@ -204,8 +200,7 @@ export default {
       this.getCurrentStoreMap(e.target.De.areaCode).then(async (res) => {
         setTimeout(()=>{
           for (let i = 0; i < res.data.length; i++) {
-            // 这个地方入参不一样，所以点击过去会报错，看下到最后的数据格式是啥样子的
-            if (this.logMapBounds(res.data[i].baseAreaCenter)) return false
+            if (this.logMapBounds(res.data[i]['经度']+','+res.data[i]['纬度'])) return false
           }
           this.map.setCenter(res.data[0].baseAreaCenter.split(','))
         }, 300)
@@ -504,11 +499,11 @@ export default {
       // 首页内容显示
       this.indexContent = true
       //设置首页中心点以及缩放比例
-      if (this.positionData) {
-        this.map.setZoomAndCenter(13, [this.positionData.position.getLng(), this.positionData.position.getLat()])
-      } else {
-        this.map.setZoomAndCenter(13, [113.658717, 34.745246])
-      }
+      // if (this.positionData) {
+      //   this.map.setZoomAndCenter(13, [this.positionData.position.getLng(), this.positionData.position.getLat()])
+      // } else {
+      //   this.map.setZoomAndCenter(13, [113.658717, 34.745246])
+      // }
       // 更换icon大小
       // this.markerList.forEach((item) => {
       //   item.setIcon(this.icon)
