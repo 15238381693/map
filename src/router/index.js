@@ -38,16 +38,16 @@ export const routes = [
     name: 'ConstructFile',
     component: constructFile
   },
-  // {
-  //   path: '/fileMaps',
-  //   name: 'FileMaps',
-  //   component: fileMaps
-  // },
   {
-    path: '/test',
-    name: 'Test',
-    component: Test
+    path: '/fileMaps',
+    name: 'FileMaps',
+    component: fileMaps
   },
+  // {
+  //   path: '/test',
+  //   name: 'Test',
+  //   component: Test
+  // },
   {
     path: '/searchBooking',
     name: 'SearchBooking',

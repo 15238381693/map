@@ -96,7 +96,7 @@ export default {
         })
     },
     toMap() {
-      this.$router.push('/test')
+      this.$router.push('/fileMaps')
     }
     // toConstructing() {
     //   this.$router.push('/constructing')
