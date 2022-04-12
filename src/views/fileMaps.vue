@@ -24,7 +24,7 @@
         <div class="wrapper">
           <img src="../assets/close1.png" alt="" class="delImg" @click="delBtn()" />
           <div class="imgimg" v-for="(item, index) in certificate" :key="index" @click="handlePreview(item)">
-            <img :src="require(`../static/${detailData.searchNum}/${item}`)" alt="" />
+            <!-- <img :src="require(`../static/${detailData.searchNum}/${item}`)" alt="" /> -->
           </div>
         </div>
       </van-popup>
@@ -330,7 +330,7 @@ export default {
     checkCertificate() {
       this.imgContent = true
       this.show = true
-      const JSONData = require(`../static/${this.detailData.searchNum}/img.json`)
+      // const JSONData = require(`../static/${this.detailData.searchNum}/img.json`)
       this.certificate = JSONData.imgArr
     },
 
@@ -341,7 +341,7 @@ export default {
     },
     // 图片预览
     handlePreview(url) {
-      ImagePreview([require(`../static/${this.detailData.searchNum}/${url}`)])
+      // ImagePreview([require(`../static/${this.detailData.searchNum}/${url}`)])
     }
   }
 }

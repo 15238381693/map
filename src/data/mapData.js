@@ -3,7 +3,7 @@ export const areaData = [
     baseAreaCode: '110101',
     baseAreaName: '郑东新区',
     baseFullName: '河南省/郑州市/郑东新区',
-    baseAreaCenter: '113.81512213750011, 34.78082146185233',
+    baseAreaCenter: '113.74082,34.78131',
     count: 7
   },
   {
@@ -49,279 +49,319 @@ export const streetData = [
       "baseAreaName": "柳林镇",
       "baseFullName": "金水区",
       "baseAreaCenter": "113.67707,34.83106",
-      "count": 19
-  },
-  {
+      "count": 19,
+      "firstChildren": [113.7568,34.84035]
+    },
+    {
       "baseAreaCode": "110102",
-      "baseAreaName": "老鸦陈街道办事处",
+      "baseAreaName": "老鸦陈街道",
       "baseFullName": "惠济区",
       "baseAreaCenter": "113.604517,34.853401",
-      "count": 4
-  },
-  {
+      "count": 4,
+      "firstChildren": [113.60975,34.850266]
+    },
+    {
       "baseAreaCode": "110102",
       "baseAreaName": "侯寨乡",
       "baseFullName": "二七区",
       "baseAreaCenter": "113.588435,34.671419",
-      "count": 13
-  },
-  {
+      "count": 13,
+      "firstChildren": [113.60322,34.69771]
+    },
+    {
       "baseAreaCode": "110102",
       "baseAreaName": "庙李镇",
       "baseFullName": "金水区",
       "baseAreaCenter": "113.64749,34.82095",
-      "count": 9
-  },
-  {
+      "count": 9,
+      "firstChildren": [113.63752,34.837265]
+    },
+    {
       "baseAreaCode": "110102",
       "baseAreaName": "沟赵乡",
       "baseFullName": "中原区",
       "baseAreaCenter": "113.50361,34.813564",
-      "count": 3
-  },
-  {
+      "count": 3,
+      "firstChildren": [113.50751,34.79548]
+    },
+    {
       "baseAreaCode": "110102",
-      "baseAreaName": "刘寨路街道办事处",
+      "baseAreaName": "刘寨路街道",
       "baseFullName": "惠济区",
       "baseAreaCenter": "113.63082,34.803859",
-      "count": 2
-  },
-  {
+      "count": 2,
+      "firstChildren": [113.61297,34.806442]
+    },
+    {
       "baseAreaCode": "110102",
       "baseAreaName": "十八里河镇",
       "baseFullName": "管城区",
       "baseAreaCenter": "113.694648,34.691264",
-      "count": 16
-  },
-  {
+      "count": 16,
+      "firstChildren": [113.70814,34.677338]
+    },
+    {
       "baseAreaCode": "110102",
       "baseAreaName": "南曹乡",
       "baseFullName": "管城区",
       "baseAreaCenter": "113.754242,34.668769",
-      "count": 20
+      "count": 20,
+      "firstChildren": [113.73305,34.657925],
   },
   {
       "baseAreaCode": "110102",
       "baseAreaName": "石佛镇",
       "baseFullName": "中原区",
       "baseAreaCenter": "113.584552,34.781923",
-      "count": 3
-  },
-  {
+      "count": 3,
+      "firstChildren": [113.59736,34.80222],
+    },
+    {
       "baseAreaCode": "110102",
       "baseAreaName": "须水镇",
       "baseFullName": "中原区",
       "baseAreaCenter": "113.52561,34.75806",
-      "count": 28
-  },
-  {
+      "count": 28,
+      "firstChildren": [113.5195,34.735546],
+    },
+    {
       "baseAreaCode": "110102",
-      "baseAreaName": "北林路街道办事处",
+      "baseAreaName": "北林路街道",
       "baseFullName": "金水区",
       "baseAreaCenter": "113.68243472831352,34.80614042689729",
-      "count": 1
-  },
-  {
+      "count": 1,
+      "firstChildren": [113.69131,34.812492],
+    },
+    {
       "baseAreaCode": "110103",
-      "baseAreaName": "北下街街道办事处",
+      "baseAreaName": "北下街街道",
       "baseFullName": "管城区",
       "baseAreaCenter": "113.66898239629165,34.754907919725724",
-      "count": 1
-  },
-  {
+      "count": 1,
+      "firstChildren": [113.66663,34.75608],
+    },
+    {
       "baseAreaCode": "110107",
-      "baseAreaName": "大河路街道办事处",
+      "baseAreaName": "大河路街道",
       "baseFullName": "惠济区",
       "baseAreaCenter": "113.5804715188558,34.89879720752879",
-      "count": 10
-  },
-  {
+      "count": 10,
+      "firstChildren": [113.62966,34.84388],
+    },
+    {
       "baseAreaCode": "110104",
-      "baseAreaName": "二里岗街道办事处",
+      "baseAreaName": "二里岗街道",
       "baseFullName": "管城区",
       "baseAreaCenter": "113.69313923225013,34.74104366446909",
-      "count": 4
-  },
-  {
+      "count": 4,
+      "firstChildren": [113.70355,34.737133],
+    },
+    {
       "baseAreaCode": "110105",
-      "baseAreaName": "丰产路街道办事处",
+      "baseAreaName": "丰产路街道",
       "baseFullName": "金水区",
       "baseAreaCenter": "113.69064902568016,34.78347299712641",
-      "count": 4
-  },
-  {
+      "count": 4,
+      "firstChildren": [113.68989,34.774914],
+    },
+    {
       "baseAreaCode": "110101",
       "baseAreaName": "古荥镇",
       "baseFullName": "惠济区",
       "baseAreaCenter": "113.52280241900007,34.914171737797915",
-      "count": 2
-  },
-  {
+      "count": 2,
+      "firstChildren": [113.526024,34.90937],
+    },
+    {
       "baseAreaCode": "110103",
-      "baseAreaName": "航海东路街道办事处",
+      "baseAreaName": "航海东路街道",
       "baseFullName": "管城区",
       "baseAreaCenter": "113.69811063169584,34.7209057300916",
-      "count": 9
-  },
-  {
+      "count": 9,
+      "firstChildren": [113.685905,34.733807],
+    },
+    {
       "baseAreaCode": "110104",
-      "baseAreaName": "航海西路街道办事处",
+      "baseAreaName": "航海西路街道",
       "baseFullName": "中原区",
       "baseAreaCenter": "113.58814341564243,34.724606467013075",
-      "count": 6
-  },
-  {
+      "count": 6,
+      "firstChildren": [113.604836,34.717785],
+    },
+    {
       "baseAreaCode": "110106",
       "baseAreaName": "花园口镇",
       "baseFullName": "惠济区",
       "baseAreaCenter": "113.71940057454924,34.884567264501925",
-      "count": 2
-  },
-  {
+      "count": 2,
+      "firstChildren": [113.691666,34.87807],
+    },
+    {
       "baseAreaCode": "110107",
-      "baseAreaName": "淮河路街道办事处",
+      "baseAreaName": "淮河路街道",
       "baseFullName": "二七区",
       "baseAreaCenter": "113.6272135460307,34.7294296710636",
-      "count": 1
-  },
-  {
+      "count": 1,
+      "firstChildren": [113.6314,34.7256],
+    },
+    {
       "baseAreaCode": "110101",
-      "baseAreaName": "祭城路街道办事处",
+      "baseAreaName": "祭城路街道",
       "baseFullName": "郑东新区",
       "baseAreaCenter": "113.74724255367039,34.76462898726254",
-      "count": 1
-  },
-  {
+      "count": 1,
+      "firstChildren": [113.77628,34.833576],
+    },
+    {
       "baseAreaCode": "110102",
-      "baseAreaName": "建设路街道办事处",
+      "baseAreaName": "建设路街道",
       "baseFullName": "中原区",
       "baseAreaCenter": "113.60692503863845,34.75335560436184",
-      "count": 1
-  },
-  {
+      "count": 1,
+      "firstChildren": [113.60508,34.755062],
+    },
+    {
       "baseAreaCode": "110107",
-      "baseAreaName": "京广路街道办事处",
+      "baseAreaName": "京广路街道",
       "baseFullName": "二七区",
       "baseAreaCenter": "113.65586689700012,34.700013896169594",
-      "count": 2
-  },
-  {
+      "count": 2,
+      "firstChildren": [113.659485,34.70776],
+    },
+    {
       "baseAreaCode": "110104",
-      "baseAreaName": "林山寨街道办事处",
+      "baseAreaName": "林山寨街道",
       "baseFullName": "中原区",
       "baseAreaCenter": "113.61595150024789,34.74473239129344",
-      "count": 2
-  },
-  {
+      "count": 2,
+      "firstChildren": [113.61229,34.74711],
+    },
+    {
       "baseAreaCode": "110107",
-      "baseAreaName": "龙子湖街道办事处",
+      "baseAreaName": "龙子湖街道",
       "baseFullName": "郑东新区",
       "baseAreaCenter": "113.79990599805376,34.81051151256531",
-      "count": 6
-  },
-  {
+      "count": 6,
+      "firstChildren": [113.81191,34.842876],
+    },
+    {
       "baseAreaCode": "110101",
-      "baseAreaName": "绿东村街道办事处",
+      "baseAreaName": "绿东村街道",
       "baseFullName": "中原区",
       "baseAreaCenter": "113.59624118237514,34.74006854633245",
-      "count":3
-  },
-  {
+      "count":3,
+      "firstChildren": [113.60218,34.7348],
+    },
+    {
       "baseAreaCode": "110102",
       "baseAreaName": "马寨镇",
       "baseFullName": "二七区",
       "baseAreaCenter": "113.52657569301459,34.685031443524906",
-      "count": 16
-  },
-  {
+      "count": 16,
+      "firstChildren": [113.50904,34.70666],
+    },
+    {
       "baseAreaCode": "110104",
-      "baseAreaName": "棉纺路街道办事处",
+      "baseAreaName": "棉纺路街道",
       "baseFullName": "中原区",
       "baseAreaCenter": "113.61656892795645,34.75998101386136",
-      "count": 1
-  },
-  {
+      "count": 1,
+      "firstChildren": [113.61419,34.762753],
+    },
+    {
       "baseAreaCode": "110107",
-      "baseAreaName": "南阳路街道办事处",
+      "baseAreaName": "南阳路街道",
       "baseFullName": "金水区",
       "baseAreaCenter": "113.63837416787851,34.774770070133115",
-      "count": 5
-  },
-  {
+      "count": 5,
+      "firstChildren": [113.64555,34.77984],
+    },
+    {
       "baseAreaCode": "110107",
-      "baseAreaName": "南阳新村街道办事处",
+      "baseAreaName": "南阳新村街道",
       "baseFullName": "金水区",
       "baseAreaCenter": "113.62816334019453,34.79046777948804",
-      "count":3
-  },
-  {
+      "count":3,
+      "firstChildren": [113.6276,34.783802],
+    },
+    {
       "baseAreaCode": "110105",
-      "baseAreaName": "人民路街道办事处",
+      "baseAreaName": "人民路街道",
       "baseFullName": "金水区",
       "baseAreaCenter": "113.67914852433148,34.7597647370265",
-      "count": 2
-  },
-  {
+      "count": 2,
+      "firstChildren": [113.67799,34.76751],
+    },
+    {
       "baseAreaCode": "110102",
-      "baseAreaName": "嵩山路街道办事处",
+      "baseAreaName": "嵩山路街道",
       "baseFullName": "二七区",
       "baseAreaCenter": "113.61733255342642,34.698751469374315",
-      "count": 5
-  },
-  {
+      "count": 5,
+      "firstChildren": [113.649765,34.69356],
+    },
+    {
       "baseAreaCode": "110103",
-      "baseAreaName": "桐柏路街道办事处",
+      "baseAreaName": "桐柏路街道",
       "baseFullName": "中原区",
       "baseAreaCenter": "113.60769500934293,34.774945936075994",
-      "count": 4
-  },
-  {
+      "count": 4,
+      "firstChildren": [113.60975,34.77033],
+    },
+    {
       "baseAreaCode": "110104",
-      "baseAreaName": "未来路街道办事处",
+      "baseAreaName": "未来路街道",
       "baseFullName": "金水区",
       "baseAreaCenter": "113.7040592584566,34.76227090533564",
-      "count": 2
-  },
-  {
+      "count": 2,
+      "firstChildren": [113.7015,34.75584],
+    },
+    {
       "baseAreaCode": "110105",
-      "baseAreaName": "文化路街道办事处",
+      "baseAreaName": "文化路街道",
       "baseFullName": "金水区",
       "baseAreaCenter": "113.66842286486815,34.789965007341266",
-      "count": 4
-  },
-  {
+      "count": 4,
+      "firstChildren": [113.679146,34.78646],
+    },
+    {
       "baseAreaCode": "110107",
-      "baseAreaName": "五里堡街道办事处",
+      "baseAreaName": "五里堡街道",
       "baseFullName": "二七区",
       "baseAreaCenter": "113.63467323980467,34.757208448569486",
-      "count":3
-  },
-  {
+      "count":3,
+      "firstChildren": [113.623955,34.755985],
+    },
+    {
       "baseAreaCode": "110107",
-      "baseAreaName": "迎宾路街道办事处",
+      "baseAreaName": "迎宾路街道",
       "baseFullName": "惠济区",
       "baseAreaCenter": "113.65495391779461,34.86863944590203",
-      "count": 7
-  },
-  {
+      "count": 7,
+      "firstChildren": [113.636185,34.8759],
+    },
+    {
       "baseAreaCode": "110107",
-      "baseAreaName": "长江路街道办事处",
+      "baseAreaName": "长江路街道",
       "baseFullName": "二七区",
       "baseAreaCenter": "113.64365719850002,34.71548068492956",
-      "count":3
-  },
-  {
+      "count":3,
+      "firstChildren": [113.6417,34.713894],
+    },
+    {
       "baseAreaCode": "110107",
-      "baseAreaName": "中原西路街道办事处",
+      "baseAreaName": "中原西路街道",
       "baseFullName": "中原区",
       "baseAreaCenter": "113.58822586944063,34.745268183701",
-      "count": 5
-  },
-  {
+      "count": 5,
+      "firstChildren": [113.58563,34.76107],
+    },
+    {
       "baseAreaCode": "110107",
-      "baseAreaName": "紫荆山南路街道办事处",
+      "baseAreaName": "紫荆山南路街道",
       "baseFullName": "管城区",
       "baseAreaCenter": "113.67658293468571,34.713521448985944",
-      "count": 10
+      "count": 10,
+      "firstChildren": [113.68272,34.703827],
   }
 ]

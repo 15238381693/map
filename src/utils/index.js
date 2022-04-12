@@ -213,3 +213,37 @@ export function dictToMap(list = [], type = 'string') {
   })
   return tmp
 }
+
+/**
+ * dict to map
+ * @param {String} str  
+ * @return {Number} length
+ */
+export function isChinese(chars){
+	var fuhao=['，','。','；','！','：','【','】','…','？','“','”','—','·' ,'、','《' ,'》' ,'（','）' ,'￥','＠' ];//一些中文符号
+	var fuhao_code=[];
+	for(var j=0;j<fuhao.length;j++){
+		//console.log('---##--' , fuhao[j].charCodeAt(0)  );
+		fuhao_code.push(fuhao[j].charCodeAt(0));
+	}
+ 
+	//console.log('---22222--' , fuhao_code  );
+	
+	var sum = 0;
+	for (var i=0; i<chars.length; i++){
+		var c = chars.charCodeAt(i);
+		//console.log('---c---' , c);
+		if ((c>=0x0001 && c<=0x007e) || (0xff60<=c && c<=0xff9f)){ 
+			//sum++;
+			//一些数字、字母、英文符号等
+		}else if( fuhao_code.indexOf(c) >= 0  ){
+			//一些中文符号
+		}else{
+			sum+=2;
+		}
+	}
+ 
+	return sum/2;
+}
+
+

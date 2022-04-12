@@ -26,8 +26,9 @@
       <van-popup v-model="show" position="bottom">
         <div class="wrapper">
           <img src="../assets/close1.png" alt="" class="delImg" @click="delBtn()" />
-          <div class="imgimg" v-for="(item, index) in certificate" :key="index" @click="handlePreview(item)">
-            <img :src="require(`../static/${detailData.searchNum}/${item}`)" alt="" />
+          <div class="imgimg" v-for="(item, index) in detailData.url" :key="index" @click="handlePreview(item)">
+            <!-- <img :src="require(`../static/${detailData.searchNum}/${item}`)" alt="" /> -->
+            <img :src="item['downloadurl']" alt="" />
           </div>
         </div>
       </van-popup>
@@ -36,8 +37,9 @@
 </template>
 
 <script>
-import { areaData, streetData, storeData } from '../data/mapData'
+import { areaData, streetData } from '../data/mapData'
 import { ImagePreview } from 'vant'
+import { isChinese } from '../utils/index'
 export default {
   name: 'FileMaps',
   data() {
@@ -68,7 +70,8 @@ export default {
         unit: '',
         time: '',
         license: '',
-        searchNum: ''
+        searchNum: '',
+        url: ''
       },
       // 设置icon大小
       icon: new AMap.Icon({
@@ -82,10 +85,6 @@ export default {
     }
   },
   created() {
-    // this.mapList = storeData
-    // this.mapList.map(item=>{
-    //   return this.markerList.push(item)
-    // })
     this.$axios({
       method: 'POST',
       url: `/zzscjdagl/rest/zzsrestcontroller/findGhxkGisByPage`,
@@ -197,10 +196,11 @@ export default {
       // 移动过去
       // map.setZoomAndCenter(curZoom, e.lnglat);
       zooms = 15
-      centers = [e.target.De.position.lng, e.target.De.position.lat]
+      // centers = [e.target.De.position.lng, e.target.De.position.lat]
+      centers = [e.target.w.firstChildren[0], e.target.w.firstChildren[1]]
       this.map.setCenter(centers)
       this.map.setZoom(zooms)
-      this.map.setZoomAndCenter(zooms, e.lnglat);
+      // this.map.setZoomAndCenter(zooms, e.lnglat);
       this.getCurrentStoreMap(e.target.De.areaCode).then(async (res) => {
         setTimeout(()=>{
           for (let i = 0; i < res.data.length; i++) {
@@ -237,6 +237,8 @@ export default {
       this.detailData.license = content['jsgcghxkzh']
       // 检索号
       this.detailData.searchNum = content['jsh']
+      // 图片地址
+      this.detailData.url = content['filelist']
     },
     /**
      * 清除marker标记
@@ -264,7 +266,6 @@ export default {
         this.getStreetMap().then(res => {
           if (res.code === 200) {
             this.clearMarker()
-            console.log(333,res.data);
             this.creatStreetMarker(res.data)
           }
         })
@@ -372,7 +373,8 @@ export default {
             position: data[i].baseAreaCenter.split(","),
             offset: new AMap.Pixel(-24, 5),
             zIndex: data[i].count,
-            map: this.map
+            map: this.map,
+            firstChildren: data[i].firstChildren
           });
           this.markers.on('click', this.showStreetInfoM);
         }
@@ -380,9 +382,41 @@ export default {
     },
     //创建门店marker
     creatShopMarker(data) {
+      // 把双字节的替换成两个单字节的然后再获得长度
       for (var i = 0; i < data.length; i++) {
         if (true) {
-          let div = `<div style="background-color: rgba(48,114,246,0.8);height:100%;width:150px;padding: 8px 12px;line-height:24px;color:white;text-align: center;letter-spacing: 0;font-size: 12px;border-radius: 20px;">
+          let fontWidth = '';
+          let chinese = isChinese(data[i]['gongchengmingcheng']);
+          if (data[i]['gongchengmingcheng'].length !== chinese) {
+            //说明有英文符号
+            let symbol = data[i]['gongchengmingcheng'].length - chinese
+            fontWidth = chinese * 14 + symbol * 6
+          } else {
+            fontWidth = data[i]['gongchengmingcheng'].length*14
+          }
+          let div = 
+          `<div style="
+            position: relative;
+            background-color: rgba(48,114,246,0.8);
+            height: 100%;
+            width:${fontWidth}px;
+            padding: 5px 10px;
+            line-height: 24px;
+            color: white;
+            text-align: center;
+            letter-spacing: 0;
+            font-size: 12px;
+            border-radius: 20px;
+          ">
+            <div style="position: absolute;
+              bottom: -5px;
+              left: 44%;
+              width: 0px;
+              height: 0px;
+              border-top: 5px solid rgba(48,114,246,0.8);
+              border-left: 5px solid transparent;
+              border-right: 5px solid transparent;">
+            </div>
             ${data[i]['gongchengmingcheng']}
           </div>`
           var marker = new AMap.Marker({
@@ -526,8 +560,8 @@ export default {
     checkCertificate() {
       this.imgContent = true
       this.show = true
-      const JSONData = require(`../static/${this.detailData.searchNum}/img.json`)
-      this.certificate = JSONData.imgArr
+      // const JSONData = require(`../static/${this.detailData.searchNum}/img.json`)
+      // this.certificate = JSONData.imgArr
     },
 
     //遮罩叉号
@@ -537,7 +571,8 @@ export default {
     },
     // 图片预览
     handlePreview(url) {
-      ImagePreview([require(`../static/${this.detailData.searchNum}/${url}`)])
+      // ImagePreview([require(`../static/${this.detailData.searchNum}/${url}`)])
+      ImagePreview([url.downloadurl])
     }
   }
 }
